@@ -1,137 +1,322 @@
-<html>
-<head> 
-	<title> Activite 4 - Module TIC </title>
-</head>
+<!DOCTYPE html>
 
-<body>
+<html lang = "en">
+    <head>
+        <title>Activitev 4 - Module TIC</title>
+        
+    </head>
+    <style>
+        body {
+            text-align: justify;
+            line-height: 1.5;
+            background-color : #F7F7F7;
+            font-family :Verdana, Geneva, Tahoma, sans-serif;
+            color : #2a2a2b;
+        }
 
-<h1> List des etudiants </h1>
-<ol>
-<li> Matricule: 212231542006, Nom: Ben hamada , Prenom: Hocine Ramzi, Specialite: informatique(lmd), Section: SECTION 2, Partie: PARTIE2  
-<li> Matricule: 222231499606, Nom: latifi , Prenom: mohamed, Specialite: informatique(lmd), Section: SECTION 2, Partie: PARTIE2 
-<li> Matricule: MATRICULE3, Nom: NOM3 , Prenom: PRENOM3, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE3 
-<li> Matricule: MATRICULE4, Nom: NOM4 , Prenom: PRENOM4, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE4  
-<li> Matricule: MATRICULE5, Nom: NOM5 , Prenom: PRENOM5, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE5  
-<li> Matricule: MATRICULE6, Nom: NOM6 , Prenom: PRENOM6, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE6  
-<li> Matricule: MATRICULE7, Nom: NOM7 , Prenom: PRENOM7, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE7  
-<li> Matricule: MATRICULE8, Nom: NOM8 , Prenom: PRENOM8, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE8  
-<li> Matricule: MATRICULE9, Nom: NOM9 , Prenom: PRENOM9, Specialite: informatique(lmd), Section: SECTION1, Partie: PARTIE9  
-<li> Matricule: MATRICULE10, Nom: NOM10 , Prenom: PRENOM10, Specialite:informatique(lmd), Section: SECTION1, Partie: PARTIE10  
+        html{
+            scroll-behavior: smooth;
+        }
+        .main{
+            margin: 5% 10% 5% 10%;
+        }
 
+        .nav_bar{
+            font-size : 15px;
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 50px;
+            left: 0px;
+            top: 0px;
+            position: fixed;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
 
+        }
+        u{
+            color: #7DA2A9;
+        }
 
-</ol>
+        a{
+            text-decoration : none;
+            color: #7DA2A9;
+        }
 
-<hr>
+        a:hover {
+            text-decoration : underline;
+        
+        }
 
-
-<h1> Partie1: Résume de chapitre 1 <h1>
-TBA
-<hr>
-
-
-<h1> Partie2: Résume de chapitre 2 <h1>
-TBA
-<hr>
-<center>  <h1> les reseaux informatique         </h1> </center>
-<h2> 1) Réseau (informatique) Network: </h2>
-<p> 
- Un réseau informatique est un regroupement d'ordinateurs et de terminaux indépendants<br>
- qui sont interconnectés dans une zone géographique donnée afin d'échanger des informations numériques selon des règles prédéfinies.<br>
- Même deux ordinateurs connectés entre eux peuvent être considérés comme un réseau.<br>
-
-</p>
-<h3> . Mise en réseau (Networking) </h3>
-<p>
-La mise en réseau (Networking) est le processus de configuration et d'utilisation d'outils et de tâches spécifiques pour connecter des ordinateurs entre eux,<br>
- afin de faciliter le partage des ressources.<br>
- <br>
-
- Un réseau est un ensemble d'appareils interconnectés qui permettent la communication de données entre différentes applications,<br>
- indépendamment de la distance qui les sépare
- 
-</p>
-<h3>   . Evolution </h3>
-<p> 
- Les réseaux informatiques ont évolué à partir du besoin de connecter des terminaux distants à un site central,<br>
- puis des ordinateurs entre eux. Initialement, ces communications étaient principalement axées sur le transfert de données informatiques,<br>
- mais aujourd'hui, nous nous orientons vers des réseaux qui intègrent non seulement des données, mais aussi la voix et la vidéo.<br>
- Un réseau repose sur deux notions fondamentales :<br>
- o L’interconnexion : qui assure la transmission des données d’un nœud à un autre.<br>
-o La communication : qui permet l’échange des données entre processus. (programmes en cours d’exécution) On appelle nœud (node) l’extrémité d’une connexion.<br>
- Un processus est un programme en cours d’exécution et représente le bout d’une communication dans un réseau informatique.
-
-</p>
-<h2> 2) Les caractéristiques de base d’un réseau sont :</h2>
-<p>▪ La topologie qui définit l’architecture d’un réseau :<br>
- On distingue la topologie physique qui définit la manière dont les équipements sont interconnectés entre eux.<br>
-La topologie logique qui précise la manière dont les équipements communiquent
-entre eux.<br>
-▪ Le débit exprimé en bits/s (ou bps) qui mesure une quantité de données numériques
-(bits) transmises par seconde (s).<br>
-▪ La distance maximale (ou portée) qui dépend de la technologie mise en œuvre.<br>
-▪ Le nombre de nœuds maximum que l’on peut interconnecter.<br>
-
-</p>
-<h2> 3 : Voici quelques termes couramment utilisés en réseau :    </h2>
-<p>  
-1.	Station de travail : Il s'agit de tout dispositif capable d'envoyer des données vers un réseau, comme un ordinateur personnel (PC), un ordinateur Mac (MAC), un terminal SUN, etc.<br>
-2.	Nœud : Un nœud peut être une station de travail, une imprimante, un serveur ou toute autre entité qui peut être identifiée par un numéro unique. Un serveur est une entité centrale qui héberge des fonctions spécifiques telles que les bases de données, le calcul, les fichiers, les e-mails, etc.<br>
-3.	Paquet : Un paquet est la plus petite unité d'information qui peut être envoyée sur un réseau. Il contient généralement l'adresse de l'émetteur, l'adresse du destinataire et les données à transmettre.<br>
-4.	Réseaux hétérogènes : Les ordinateurs reliés au réseau sont de constructeurs divers : Ethernet.(utilise un câble de type coaxial )<br>
-5.	Débit : Le débit mesure la quantité de données numériques (bits) transmises par seconde (bit/s ou bps). Il indique la vitesse de transfert des données à travers le réseau.
-
-</p>	
-<br>
-<h2> 4) Éléments d'un reseau: </h2>
-<p>
-1.	Des ordinateurs équipés d'une carte de communication.<br>
-2.	Des logiciels tels que les navigateurs web, les clients de messagerie et les serveurs web.<br>
-3.	Des supports de réseau tels que les câbles en paires torsadées, les prises RJ45, le Wi-Fi, les lignes téléphoniques, l'ADSL, la fibre optique.<br>
-4.	Des équipements d'interconnexion tels que les répéteurs , les concentrateurs , les commutateurs , les routeurs.<br>
-</p>
-<h2> 5) Le réseau informatique peut être classifié en fonction de différents critères, tels que : </h2>	
-<h3> 5.1.la portée: </h3>
-<p> LAN:constitué d'ordinateurs dans une même entreprise, MAN:réunion de plusieurs LAN, WAN : des réseaux larges publics assurent la transmission des données sur des longues distances à l’échelle d’un pays ou de
-la planète,PAN ,WPAN ,WLAN ,SAN.
-</p>	
-<h3> 5.2.L'ouverture: </h3>
-<p> Intranet(interne), Extranet(externe), Internet(publics).</p>	
-<h3> 5.3.Les supports de connexion : filaires et non filaires. </h3>
-<h3> 5.4. Le type d’organisation :  </h3>
-<p> .peer to peer : Chaque ordinateur est un peu serveur un peu client et libre de partager ses ressources, faible sécurisé.<br>
-.client serveur : La plupart des stations sont des « postes clients », les autres sont des serveurs. L'administration est réalisée par un administrateur. </p>
-<h2> 6) Le type de topologie: </h2>
-<h3> Bus :  </h3>
-<p>Les machines sont reliées par un câble coaxial et chaque ordinateur est connecté en série sur le bus par l'intermédiaire de connecteurs BNC.Aujourd'hui elle n'est plus adaptée
-inconvénient la limitation du débit à 10 Mbits/s</p>
-<h3> Anneau :  </h3>
-<p>Les ordinateurs sont situés sur une boucle et communiquent chacun à leur tour. Elle utilise la méthode d'accès à "jeton".Le jeton détermine quelle station peut émettre, il est transféré à tour
-de rôle vers station suivante.</p>	
-<h3> Etoile :  </h3>
-<p>Toutes les stations sont connectées à un commutateur,Les stations émettent vers le HUB qui renvoie les données vers tous les autres hub ou uniquement au destinataire.</P>	
-<h3> Maillée :  </h3>	
-<p>utilisent plusieurs chemins de transferts entre les différents nœuds regroupee par un câblage en étoile.<br>	
-</p>	
-	
-
-<h1> Partie1: Résume de chapitre 3 <h1>
-TBA
-<hr>
+        h1 ,h2, h3{
+            color: #7DA2A9;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ::marker{
+            color: #7DA2A9;
+            font-size: 20px;
+        }
 
 
 
-<h1> Partie1: Résume de chapitre 4 <h1>
-TBA
-<hr>
+    </style>
+    <body>
+        <div class="nav_bar">
+            <a href="#chap1">chapitre 1</a>
+            <a href="#chap2">chapitre 2</a>
+            <a href="#chap3">chapitre 3</a>
+            <a href="#chap4">chapitre 4</a>
+            <a href="#chap5">chapitre 5</a>
+        </div>
+
+        
+        
 
 
 
-<h1> Partie1: Résume de chapitre 5 <h1>
-TBA
-<hr>
+        <div class="main">
+            
+
+            <div class="list">
+                <center><h1>Liste des etudiants</h1></center>
+                <center><h2>Section 1 Informatique(LMD)</h2></center>
+                <ul>
+                    
+                    <li>Matricule: 222231498218 , Nom: Ghoul , Prenom: Safia, Partie: PARTIE 1</li>
+                    
+                    
+                    <li>Matricule: 212231542006, Nom: Ben hamada , Prenom: Hocine Ramzi, Partie: PARTIE 2</li>
+                    <li>Matricule: 222231499606, Nom: latifi , Prenom: mohamed, Partie: PARTIE 2</li>
+                    
+                    <li>Matricule: 222231649406 , Nom: Mansour , Prenom: Wail, Partie: PARTIE 3</li>
+                    <li>Matricule: 2222 , Nom: NOM6 , Prenom: PRENOM6, Partie: PARTIE 3</li>
+                    
+                    <li>Matricule: 222231606911 , Nom: Abbaci , Prenom: Ahmed Houdaifa, Partie: PARTIE 4</li>
+                    <li>Matricule: 222231601718, Nom: Boulmaache , Prenom: Mohamed Moncef, Partie: PARTIE 4</li>
+                    
+                    <li>Matricule: 222231318105 , Nom: Sissaoui , Prenom: Amine, Partie: PARTIE 5</li>
+                    
+                    
+                </ul>
+            </div>
+            <br>
+            <br id = "chap1">
+
+            <div>
+
+                <center><h1>Intorduction</h1></center>
+                <ol>
+                    <li><h2>Les techniques de l'information et la communication (TIC)</h2></li>
+                    <p>Elles regroupent l'ensemble des outils mis en place pour manipuler, traiter , produire, faire circuler , transmettre, modifier et échanger , et permettre une meilleure diffusion de l'information , de conserver , présenter de l'information sous forme vocale, images ou des données contenues dans des signaux de nature optiques, électromagnétiques ou acoustiques.<br>
+                        La naissance des TIC est due notamment à la convergence de l'informatique, des télécommunications, des électroniques et de l'audiovisuel.</p>
+                    <li><h2>Categories et objectifs</h2></li>
+                    <ol>
+                        <li><h3>Categories</h3></li>
+                        <ul>
+                            <li>La téléinformatique est la science des méthodes, des techniques, des équipements permettant l'échange d'informations numériques entre plusieurs systèmes informatiques: Internet, serveurs, réseaux, dépannage...</li><br>
+                            <li>Télécommunication : domaine où les systèmes communicants ne sont pas nécessairement informatiques : traitement du signal, transmission analogique, etc. les centres d'appels, la téléphonie mobile, le système GPS...</li>
+
+                        </ul>
+                        <li><h3>Objectifs recherchés</h3></li>
+                        <ul>
+                            <li>La connectivité </li>
+                            <li>La modularité </li>
+                            <li>Une implémentation simple </li>
+                            <li>L'utilisation facile </li>
+                            <li>La fiabilité </li>
+                        </ul>
+                    </ol>
+                    <li><h2>Composants de TIC</h2></li>
+                    <ul>
+                        <li><h3>Partie materielle</h3></li>
+                        <ul>
+                            <li>Pc , tv ,telephone ..</li>
+                            <li><u>Station de travail :</u> toute machine capable d'envoyer des données vers les reseaux , serveurs...</li>
+                        </ul>
+                        <li><h3>Partie logicielle :</h3></li>
+                        <ul>
+                            <li>Systèmes d'exploitation , logiciels d'application ...</li>
+                            <li>Les réseaux d'internet ou mobiles.</li>
+                        </ul>
+                    </ul>
+                    <li><h2>Caractéristiques</h2></li>
+                    <ul>
+                        <li>La rapidité </li>
+                        <li>La décentralisation du pouvoir </li>
+                        <li>Un meilleur accès aux informations </li>
+                        <li>La rationalité </li>
+                        <li>La mondialisation </li>
+                        <li>La répartition </li>
+                    </ul>
+
+                    <li><h2>Initialisation aux techniques de communication</h2></li>
+                    <ol>
+                        <li><h3>Objectifs de communication</h3></li>
+                        Elles correspondent aux reactions qu'on attend du recepteur , elles se définissent selon 3 stades : <br>
+                        <ul>
+                            <li><p><u>Cognitif :</u> la prise de conscience,  l'attention , la notoriété et l'information au sujet d'une idée , un produit ..</p></li>
+                            <li><p><u>Affectif :</u> modifier ou renforcer l'image du produit en utilisant les attitudes , les opinions..</p></li>
+                            <li><p><u>Comportementale :</u> modifier le comportement en provoquant l'achat , l'essai ..</p></li>
+                        </ul>
+                        <li><h3>Système de communication</h3></li>
+                        Il contient les concepts suivants : <br><br>
+                        <ul>
+                            <li><u>Partenaires de communication :</u> émetteur,  recepteur </li>
+                            <li><u>Les vecteurs :</u> messages , médias </li>
+                            <li><u>Les fonctions :</u></li>
+                            <ul>
+                                <li><u>Codage :</u> traduire le message en ensemble structuré signifiant</li> <li> décodage : interprétation du recepteur </li>
+                                <li><u>Feedback :</u> reaction du recepteur fave au message reçu </li>
+                            </ul>
+                            <li><u>Bruit :</u> perturber les signaux pendant la transmission </li>
+                        </ul>
+                        <li><h3>Les types de communication</h3></li>
+                        <ul>
+                            <li><p><u>Industrielle (corporate) :</u> communiquer sur de marque , entreprise ou institution,  réalisée par la publicité,  sponsoring ..</p></li>
+                            <li><u><p>Commerciale ou de produit :</u> mettre en avant ses caractéristiques, ses performances et avantages crédiblement</p></li>
+                        </ul>
+                        <li><h3>Les schémas de la communication :</h3></li>
+                        <ul>
+                            <li><p><u>Interpersonnelle :</u> adressage de l'un à un de ses collaborateurs,  ou un emetteur va transmettre son message à un destinataire , et attende éventuellement un feedback</p> </li>
+                            <li><p><u>De groupe :</u> adressage aux salariés,  un manager à son équipe ou lors d'une réunion. L'émetteur veut faire passer le message à plusieurs destinataires, et attend un retour à discuter afin de tirer max des avis</p></li>
+                            <li><p><u>De masse :</u> par exemple celle de la publicité , on attend pas de feedback , bien que l'efficacité puisse se mesurer en termes de ventes ..</p></li>
+                        </ul>
+                        
+                    </ol>
+                    
+                </ol>
+            </div>
+            <br>
+            <br id = "chap2">
+
+            <div>
+
+                <div><center><h1>Les Reseaux Informatique</h1></center></div>
+                <div>
+                    <ol>
+                        <li><h2>Réseau (informatique) Network:</h2></li>
+                        <p>Un réseau informatique est un regroupement d'ordinateurs et de terminaux indépendants qui sont interconnectés dans une zone géographique donnée afin d'échanger des informations numériques selon des règles prédéfinies.</p>
+                        <p>Même deux ordinateurs connectés entre eux peuvent être considérés comme un réseau.</p>
+                        <ul>
+                            <li><h3>Mise en réseau (Networking)</h3></li>
+                            <p>La mise en réseau (Networking) est le processus de configuration et d'utilisation d'outils et de tâches spécifiques pour connecter des ordinateurs entre eux, afin de faciliter le partage des ressources.</p>   
+                            <p>Un réseau est un ensemble d'appareils interconnectés qui permettent la communication de données entre différentes applications, indépendamment de la distance qui les sépare</p>
+                                
+                            <li><h3>Evolution</h3></li>
+                            <p>Les réseaux informatiques ont évolué à partir du besoin de connecter des terminaux distants à un site central, puis des ordinateurs entre eux. Initialement, ces communications étaient principalement axées sur le transfert de données informatiques, mais aujourd'hui, nous nous orientons vers des réseaux qui intègrent non seulement des données, mais aussi la voix et la vidéo.</p>
+                            <p>Un réseau repose sur deux notions fondamentales :</p>
+                            <ul>
+                                <li><p><u>L'interconnexion :</u> qui assure la transmission des données d'un nœud à un autre.</p></li>
+                                <li><p><u>La communication :</u> qui permet l'échange des données entre processus. (programmes en cours d'exécution) On appelle nœud (node) l'extrémité d'une connexion.</p></li>
+                            </ul>
+                            <p>Un processus est un programme en cours d'exécution et représente le bout d'une communication dans un réseau informatique.</p>            
+                        </ul>
+
+                        <li><h2>Les caractéristiques de base d'un réseau sont :</h2></li>
+                        <ul>
+                            <li>La topologie qui définit l'architecture d'un réseau :</li><br>
+                            <ul>
+                                <li>La topologie physique qui définit la manière dont les équipements sont interconnectés entre eux.</li><br>
+                                <li>La topologie logique qui précise la manière dont les équipements communiquent entre eux.</li><br>
+                            </ul>
+                            <li>Le débit exprimé en bits/s (ou bps) qui mesure une quantité de données numériques (bits) transmises par seconde (s).</li><br>
+                            <li>La distance maximale (ou portée) qui dépend de la technologie mise en œuvre.</li><br>
+                            <li>Le nombre de nœuds maximum que l'on peut interconnecter.</li>
+                        </ul>
+
+                        <li><h2>Voici quelques termes couramment utilisés en réseau :</h2></li>
+                        <ol>
+                            <li><u>Station de travail :</u> Il s'agit de tout dispositif capable d'envoyer des données vers un réseau, comme un ordinateur personnel (PC), un ordinateur Mac (MAC), un terminal SUN, etc.</li><br>
+                            <li><u>Nœud :</u> Un nœud peut être une station de travail, une imprimante, un serveur ou toute autre entité qui peut être identifiée par un numéro unique. Un serveur est une entité centrale qui héberge des fonctions spécifiques telles que les bases de données, le calcul, les fichiers, les e-mails, etc.</li><br>
+                            <li><u>Paquet :</u> Un paquet est la plus petite unité d'information qui peut être envoyée sur un réseau. Il contient généralement l'adresse de l'émetteur, l'adresse du destinataire et les données à transmettre</li><br>
+                            <li><u>Réseaux hétérogènes :</u> Les ordinateurs reliés au réseau sont de constructeurs divers : Ethernet.(utilise un câble de type coaxial )</li><br>
+                            <li><u>Débit :</u> Le débit mesure la quantité de données numériques (bits) transmises par seconde (bit/s ou bps). Il indique la vitesse de transfert des données à travers le réseau.</li>
+                        </ol>
+
+                        <li><h2>Éléments d'un reseau:</h2></li>
+                        <ol>
+                            <li>Des ordinateurs équipés d'une carte de communication.</li><br>
+                            <li>Des logiciels tels que les navigateurs web, les clients de messagerie et les serveurs web.</li><br>
+                            <li>Des supports de réseau tels que les câbles en paires torsadées, les prises RJ45, le Wi-Fi, les lignes téléphoniques, l'ADSL, la fibre optique.</li><br>
+                            <li>Des équipements d'interconnexion tels que les répéteurs , les concentrateurs , les commutateurs , les routeurs.</li>
+                        </ol>
+
+                        <li><h2>Le réseau informatique peut être classifié en fonction de différents critères, tels que :</h2></li>
+                        <ul>
+                            <li><u>la portée :</u></li><br>
+                            <ul>
+                                <li>LAN : constitué d'ordinateurs dans une même entreprise</li>
+                                <li>MAN : réunion de plusieurs LAN</li>
+                                <li>WAN : des réseaux larges publics assurent la transmission des données sur des longues distances à l'échelle d'un pays ou de la planète,PAN ,WPAN ,WLAN ,SAN.</li>
+                            </ul>
+                            <br>
+                            <li><u>L'ouverture:</u> Intranet(interne), Extranet(externe), Internet(publics).</li><br>
+                            <li><u>Les supports de connexion :</u> filaires et non filaires.</li><br>
+                            <li><u>Le type d'organisation :</u></li><br>
+                            <ul>
+                                <li><u>peer to peer :</u> Chaque ordinateur est un peu serveur un peu client et libre de partager ses ressources, faible sécurisé.</li>
+                                <li><u>client serveur :</u> La plupart des stations sont des « postes clients », les autres sont des serveurs. L'administration est réalisée par un administrateur.</li>
+                            </ul>
+                        </ul>
+                        <li><h2>Le type de topologie:</h2></li>
+                        <ul>
+                            <li><u>Bus :</u> Les machines sont reliées par un câble coaxial et chaque ordinateur est connecté en série sur le bus par l'intermédiaire de connecteurs BNC.Aujourd'hui elle n'est plus adaptée inconvénient la limitation du débit à 10 Mbits/s</li><br>
+                            <li><u>Anneau :</u> Les ordinateurs sont situés sur une boucle et communiquent chacun à leur tour. Elle utilise la méthode d'accès à "jeton".Le jeton détermine quelle station peut émettre, il est transféré à tour de rôle vers station suivante.</li><br>
+                            <li><u>Etoile :</u> Toutes les stations sont connectées à un commutateur,Les stations émettent vers le HUB qui renvoie les données vers tous les autres hub ou uniquement au destinataire.</li><br>
+                            <li><u>Maillée :</u> utilisent plusieurs chemins de transferts entre les différents nœuds regroupee par un câblage en étoile.</li>
+                        </ul>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <br id = "chap3">
 
 
+            <div>
+                <center><h1>Le Modèle OSI</h1></center>
+                <ol>
+                    <li><h2>Les composants du modèle OSI</h2></li>
+                    <p>Le modèle OSI est composé de 7 couches : la couche physique, la couche liaison de données, la couche réseau, la couche transport, la couche session, la couche présentation et la couche application.Chaque couche est responsable de fonctions spécifiques dans la communication des données.</p>
+                    <li><h2>Les composants du modèle TCP/IP</h2></li>
+                    <p>Le modèle TCP/IP est composé de 4 couches : la couche réseau, la couche transport, la couche application et la couche d'accès réseau. Contrairement au modèle OSI, le modèle TCP/IP combine les fonctions des couches de session, présentation et application en une seule couche.</p>
+                    <li><h2>L'adressage IP</h2></li>
+                    <p>L'adressage IP permet d'identifier de manière unique chaque périphérique connecté à un réseau. Une adresse IP est composée de 4 octets et est représentée sous forme de quatre nombres séparés par des points. Il existe deux types d'adresses IP : les adresses IP version 4 (IPv4) et les adresses IP version 6 (IPv6).</p>
+                </ol>
+            </div>
+            <br>
+            <br id = "chap4">
 
-</body>
+            <div>
+                <div><center><h1>Internet et Web</h1></center></div>
+                <div class="">
+                    <ol>
+                        <li><h2>Introduction</h2></li>
+                        <p>Le Web, également connu sous le nom de World Wide Web, est un système hypertexte public qui permet aux utilisateurs d'acceder des pages accessibles via des sites à l'aide d'un naviguateur.Ces pages sont liées entre elles par des lien hypertexte</p>
+                        <li><h2>Aspects techniques du Web</h2></li>
+                        <ul>
+                            <li><u>URL (Uniform Resource Locator):</u> l'adresse unique de la page localise par le protocol DNS.<br><br></li>
+                            <li><u>HTTP (HyperText Transfer Protocol):</u> Un protocole fonctionne sur le modèle client-serveur et ne conserve pas l'état<br><br></li>
+                            <li><u>HTML (Hypertext Markup Language):</u> Un language de discription permet d'include du texte, des images, des liens hypertexte et d'autres objets multimédias</li>
+                        </ul>
+                        <li><h2>Page web et site web</h2></li>
+                        <p>Une page Web est un document multimedia décrit élément par élément avec un Language de discription, stocké dans un fichier et visualisé dans un naviguateur, elle est localise sur internet grace a une adresse URL.<br>
+                            Un site web est un regroupement de pages web liées entre elles par des liens hypertexte
+                        </p>
+                        <li><h2>Création d'une page web HTML</h2></li>
+                        <p>Un document HTML ou HyperText Markup Language est un fichier texte construit suivant une syntaxe précise affiche dans un naviguateur</p>
+                        <p>Ce fichier doit comporter des balises telles que "html", "head", "title" et "body".</p>
+                    </ol>
+                </div>
+            </div>
+            <br>
+            <br id = "chap5">
+
+            <div>
+
+            </div>
+        </div>
+    </body>
 </html>
